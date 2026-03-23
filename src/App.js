@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import TopBand from "./components/TopBand";
+import QuickBar from "./components/QuickBar";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Hero from "./sections/Hero"
+import Welcome from "./sections/Welcome";
+import Theme from "./sections/Theme";
+import KeyHighlights from "./sections/KeyHighlights";
+import SessionTracks from "./sections/SessionTracks";
+import Deadlines from "./sections/Deadlines";
+import WhyJoin from "./sections/WhyJoin";
+import Publications from "./sections/Publications";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-sans">
+      <TopBand />
+      <QuickBar />
+      <Navbar />
+
+      <Hero />
+      <Welcome />
+      <Theme />
+      <KeyHighlights />
+      <SessionTracks />
+      <Deadlines />
+      <WhyJoin />
+      <Publications /> 
+
+      <Footer />
     </div>
   );
 }
